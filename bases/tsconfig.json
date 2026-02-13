@@ -42,5 +42,5 @@
     "skipLibCheck": true,
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["classes/**/*"]
+  "include": ["interfaces/**/*"]
 }
