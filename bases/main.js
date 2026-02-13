@@ -74,6 +74,29 @@ define("ES6/desestructuracion", ["require", "exports"], function (require, expor
         // console.log({ ironman, capitan });
     })();
 });
+define("ES6/for-of", ["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    (function () {
+        var ironman = {
+            name: 'Ironman',
+            weapon: 'Armorsuit',
+        };
+        var captainAmerica = {
+            name: 'Capitán América',
+            weapon: 'Escudo',
+        };
+        var thor = {
+            name: 'Thor',
+            weapon: 'Mjolnir',
+        };
+        var avengers = [ironman, captainAmerica, thor];
+        for (var _i = 0, avengers_1 = avengers; _i < avengers_1.length; _i++) {
+            var avenger = avengers_1[_i];
+            console.log(avenger.name, avenger.weapon);
+        }
+    })();
+});
 define("ES6/let-var", ["require", "exports"], function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
