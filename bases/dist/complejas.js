@@ -6,6 +6,9 @@
             id: 125,
             zip: 'KY2 DUD',
             city: 'Formosa'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
     const client2 = {
@@ -15,6 +18,9 @@
             city: 'Toronto',
             id: 120,
             zip: 'K25 U2A'
+        },
+        getFullAddress(id) {
+            return this.address.city;
         }
     };
 })();
