@@ -7,8 +7,8 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "esnext",
-    "target": "es6",
+    "module": "amd",
+    "target": "es5",
     "types": [],
     // For nodejs:
     // "lib": ["esnext"],
@@ -16,9 +16,10 @@
     // and npm install -D @types/node
 
     // Other Outputs
-    // "sourceMap": true,
+    "sourceMap": true,
     // "declaration": true,
     // "declarationMap": true,
+    "outFile": "./main.js",
 
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
@@ -35,8 +36,8 @@
     // Recommended Options
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
+    // "verbatimModuleSyntax": true,
+    // "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
