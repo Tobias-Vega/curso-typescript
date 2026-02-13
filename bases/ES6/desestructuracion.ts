@@ -20,4 +20,9 @@
   const printAvenger = ({ ironman, ...resto }: Avengers) => {
     console.log(ironman, resto);
   }
+
+  const avengersArr: [string, boolean, number] = ['Cap. America', true, 150.15];
+
+  const [capitan, ironman, seriaUnNumero] = avengersArr;
+  // console.log({ ironman, capitan });
 })()

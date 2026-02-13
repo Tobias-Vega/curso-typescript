@@ -69,6 +69,9 @@ define("ES6/desestructuracion", ["require", "exports"], function (require, expor
             var ironman = _a.ironman, resto = __rest(_a, ["ironman"]);
             console.log(ironman, resto);
         };
+        var avengersArr = ['Cap. America', true, 150.15];
+        var capitan = avengersArr[0], ironman = avengersArr[1], seriaUnNumero = avengersArr[2];
+        // console.log({ ironman, capitan });
     })();
 });
 define("ES6/let-var", ["require", "exports"], function (require, exports) {
