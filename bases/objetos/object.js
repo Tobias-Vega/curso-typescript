@@ -8,9 +8,10 @@
         name: 'Clack Kent',
         age: 60,
         powers: ['Super fuerza'],
-        getNombre() {
-            return this.name;
-        }
+        // getNombre() {
+        //   return this.name
+        // }
     };
+    console.log(flash);
 })();
 export {};
