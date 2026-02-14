@@ -1,12 +1,13 @@
-var express = require('express');
+// const express = require('express');
+import express from 'express';
 var app = express();
 app.get('/', function (req, res) {
-    res.json({
+    res.status(201).json({
         ok: true,
-        message: 'Todo salió bien'
+        msg: 'Nuevo id 123232'
     });
 });
-var PORT = process.env.PORT || 3000;
+var PORT = 3000;
 app.listen(PORT, function () {
     console.log("Server is running on port ".concat(PORT));
 });

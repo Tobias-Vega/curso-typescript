@@ -1,15 +1,17 @@
-const express = require('express');
+// const express = require('express');
+import express from 'express';
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.json({
+
+  res.status(201).json({
     ok: true,
-    message: 'Todo salió bien'
-  })
+    msg: 'Nuevo id 123232'
+  });
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
