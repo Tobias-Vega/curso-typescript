@@ -1,4 +1,4 @@
-import { printObject, genericFunction } from "./generics/generics";
+import { printObject, genericFunction, generictFunctionArrow } from "./generics/generics";
 
 
 // printObject(123);
@@ -7,6 +7,8 @@ import { printObject, genericFunction } from "./generics/generics";
 // printObject([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 // printObject('Hola mundo');
 
-console.log(genericFunction(3.141618).toFixed(2));
-console.log(genericFunction('Hola mundo').toFixed(2));
-console.log(genericFunction(new Date()).toFixed(2));
+const name: string = 'Tobías';
+
+console.log(generictFunctionArrow(3.141618).toFixed(2));
+console.log(generictFunctionArrow(name).toUpperCase());
+console.log(generictFunctionArrow(new Date()).getDate());
