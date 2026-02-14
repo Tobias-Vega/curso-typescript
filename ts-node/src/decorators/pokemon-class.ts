@@ -32,10 +32,30 @@ function CheckValidPokemonId() {
   }
 }
 
+function readonly(isWritable: boolean = true) {
+  return function(target: any, propertyKey: string) {
+    const descriptor: PropertyDescriptor = {
+      get() {
+        console.log(this)
+        return 'Tobías'
+      },
+      set(this, val) {
+        Object.defineProperty(this, propertyKey, {
+          value: val,
+          writable: !isWritable,
+          enumerable: false,
+        })
+      }
+    } 
+    return descriptor;
+  }
+}
+
 @bloquearPrototipo
 @printToConsoleConditional(false)
 export class Pokemon {
 
+  @readonly(true)
   public publicApi: string = 'https://pokeapi.co';
   constructor(
     public name: string,

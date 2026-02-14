@@ -6,4 +6,6 @@ const charmander = new Pokemon ('Charmander');
 // (Pokemon.prototype as any).customName = 'Pikachu';
 
 
-charmander.savePokemonToDB(3)
+// charmander.savePokemonToDB(3)
+
+console.log(charmander);
